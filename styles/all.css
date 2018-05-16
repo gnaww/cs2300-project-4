@@ -1,0 +1,1164 @@
+html {
+  font-family: Helvetica;
+  color: black;
+}
+/* Trying to remove extra padding around web page */
+
+body,head {
+   margin:0;
+   padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+textarea
+{
+   font-family: Helvetica;
+   font-size: 18px;
+}
+
+.message {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*spacing used to create space above footer*/
+div.spacing {
+  height: 100px;
+}
+
+/*Creating Grid Layouts ************************************* */
+/* Grid code from : https://www.sitepoint.com/understanding-css-grid-systems/ */
+.row, .column {
+  box-sizing: border-box;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+
+.column {
+  position: relative;
+  float: left;
+}
+
+/*Creates gutters for all but left-most col (see citation above)*/
+.column + .column {
+  margin-left: 1.6%;
+}
+
+/*Creates gutters between rows */
+.row {
+  margin-top: 1%;
+  padding: 0;
+}
+
+/*Define column width by percentage. Screen = 12 cols (see citation above)*/
+.column-1 {
+    width: 6.86666666667%;
+    text-align: center;
+
+}
+
+.column-2 {
+    width: 15.3333333333%;
+}
+
+.column-3 {
+    width: 23.8%;
+}
+
+/*For when you want 3x3 grid on front page */
+.column-third {
+    width: 26.6222222222%;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.column-4 {
+    width: 32.2666666667%;
+}
+
+.column-5 {
+    width: 40.7333333333%;
+}
+
+.column-6 {
+    width: 49.2%;
+}
+
+.column-7 {
+    width: 57.6666666667%;
+}
+
+.column-8 {
+    width: 66.1333333333%;
+}
+
+.column-9 {
+    width: 74.6%;
+}
+
+.column-10 {
+    width: 83.0666666667%;
+}
+
+.column-11 {
+    width: 91.5333333333%;
+}
+
+.column-12 {
+    width: 100%;
+}
+
+/*Header CSS*/
+header {
+  padding: 0px 0 0px 0;
+  margin: 0 0 0 0;
+}
+.header {
+  color: white;
+}
+.welcome_message {
+  position: absolute;
+  line-height: 42px;
+  right: 170px;
+  margin-top: -42px;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: white;
+}
+
+/*Menu code based off code from https://www.w3schools.com/css/css_navbar.asp */
+/* Code based off code developed from project 1 made by Rowan*/
+
+#menu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #636363;
+}
+
+#menu li {
+  display: inline;
+  text-align:center;
+  float: left;
+}
+
+#menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+
+#menu a:hover {
+  background-color: #afafaf;
+  color:white;
+}
+
+#current_page a{
+  background-color: #8EC8D1;
+}
+#current_page a:hover{
+  background-color: #afafaf;
+  color: white;
+}
+
+
+
+/* Log out button */
+button.logout {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 11px 18px;
+  text-decoration: none;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-weight: normal;
+  background-color: #636363;
+  border: solid;
+  border-width: 0;
+  cursor:pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+button.logout:hover {
+  background-color: #8EC8D1;
+  color: white;
+  cursor:pointer;
+}
+
+.login_button {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+
+/* Footer CSS*/
+/* Inspiration from: https://www.w3schools.com/howto/howto_css_fixed_footer.asp */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  background-color: #07889B;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  height: 90px; /*Have to set height to make at very bottom */
+  text-align: left;
+  margin-top: 0px;
+  padding: 5px;
+  padding-bottom: 50px;
+  border-style: none;
+  box-sizing: border-box;
+}
+
+.footer p {
+  display: inline-block;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer a {
+  display: inline-block;
+  float: right;
+  margin: 2%;
+  padding: 8px 16px;
+  background-color: #14213D;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.footer a:hover {
+  background-color: #14213D;
+  color: #beeeef;
+  text-decoration: none;
+}
+
+.footer a:active {
+  background-color: #14213D;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .center {
+  text-align: center;
+}
+
+/* CSS for individual pages *****************************************************/
+
+.warning_message {
+  height: 460px;
+  text-align:center;
+  display:table;
+  width:100%;
+}
+.warning_message h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imagePreview {
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+}
+.imagePreview img {
+  width: 100%;
+  height: auto;
+}
+/* Home page */
+div.home {
+  color: #07889B;
+  text-align: center;
+}
+
+div.edit_home button, div.home_about button, div.home_form button {
+  float: right;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+div.edit_home button:hover {
+  background-color: #07889B;
+}
+div.home_about button, div.home_form button {
+  float: none;
+  margin: 0;
+  margin-top: 10px;
+  background-color: #66B9BF;
+}
+div.home_about button:hover, div.home_form button:hover {
+  background-color: #07889B;
+}
+div.home_form button {
+  background-color: #58707C;
+}
+div.home_form button:hover {
+  background-color: #afafaf;
+}
+div.home_image {
+  text-align: center;
+  background-color: #8EC8D1;
+  overflow: hidden;
+  height: 450px;
+}
+div.home_form {
+  text-align: center;
+  background-color: #8EC8D1;
+}
+div.home_image .background {
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  top: 50%;
+}
+div.home_form .old_background {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+div.home_form h2 {
+  color: black;
+  margin: 0;
+  padding-bottom: 20px;
+}
+div.home_form form {
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  color: black;
+}
+div.home_form form input[name=background_source] {
+  margin-left: 50px;
+  margin-top: 10px;
+  width: 200px;
+}
+div.home_form form input[name=background_description] {
+  margin-left: 21px;
+  margin-top: 15px;
+  width: 200px;
+}
+div.home_image h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255,255,255, 0.75); /*semi-opaque white background */
+  padding: 30px;
+  font-size: 3em;
+  color: #07889B;
+}
+div.home_form ul {
+  text-align: left;
+}
+/* put link to image source */
+div.home_image a {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  background-color: #8EC8D1;
+  font-size: 1em;
+  text-decoration: none;
+  /* https://css-tricks.com/almanac/properties/b/box-shadow/ */
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+div.home p {
+  color: white;
+  line-height: 1.5;
+  font-size: 1em;
+}
+
+div.home_about {
+  text-align: center;
+  background-color:#58707C;
+  color: #0F1108;
+  padding: 30px 80px 40px 80px;
+}
+
+div.home_about h1 {
+  font-size: 1.75em;
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+
+
+/* Events page */
+
+div.editevent_container {
+  min-height: 700px;
+}
+
+div.events_header {
+  background-color: #8EC8D1;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+}
+
+div.events_body {
+  background-color: #58707C;
+  color: white;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+  padding-top: 10px;
+}
+
+.events_body h2{
+  text-align: left;
+  padding-left: 40px;
+  font-size: 1.7em;
+  padding-top: 10px;
+}
+
+div.events_detail {
+  background-color: white;
+  color: black;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.events_detail h3 {
+  text-align: left;
+  font-size: 1.6em;
+  padding-left: 40px;
+  color: #066471;
+  padding-top: 10px;
+}
+
+h3.event_time {
+  text-align: right;
+  display: inline;
+  float: right;
+  position: absolute;
+  top: 2px;
+  right: 40px;
+
+}
+.events_detail p {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.events_detail h4 {
+  text-align: left;
+  font-size: 1.2em;
+  padding-left: 40px;
+  color: #066471;
+}
+.events_detail form {
+  display: inline;
+  margin-left: 40px;
+}
+
+div.new_event_body {
+  background-color: #8EC8D1;
+  padding-left: 15%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.new_event_body form {
+  margin: 40px;
+  font-size: 1.25em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  display: inline;
+}
+
+.new_event_body li {
+  padding-top: 10px;
+}
+
+.new_event_body input {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-top: 8px;
+  width: 50%;
+}
+
+.new_event_body input[name='title'] {
+  margin-left: 150px;
+  margin-top: 10px;
+  width: 40%;
+}
+.new_event_body input[name='date'] {
+  margin-left: 41px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.new_event_body input[name='time'] {
+  margin-left: 56px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+.new_event_body input[name='location'] {
+  margin-left: 161px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+
+.new_event_body textarea {
+  font-size: 0.9em;
+  padding: 5px;
+  position: relative;
+  display: block;
+  width: 75%;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+button#neweventbutton {
+  margin-left: 23%;
+  margin-right: 40%;
+  background-color: #58707C;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+  width: 40%;
+}
+
+button#neweventbutton:hover {
+  background-color: #afafaf;
+  color: white;
+  cursor:pointer;
+}
+
+
+.events_detail button {
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: #8EC8D1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.events_detail button:hover {
+  cursor: pointer;
+  background-color: #afafaf;
+}
+
+.new_event_body button {
+  margin-top: 20px;
+  margin-right: 30px;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+
+/* Edit event page */
+.editevent button[name='back'] {
+  margin-top: 20px;
+  background-color: #8EC8D1;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.editevent button[name='back']:hover {
+  cursor: pointer;
+  background-color: #afafaf;
+}
+
+form#editform {
+  background-color: #8EC8D1;
+  margin: 40px;
+  font-size: 1.25em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+  display: inline;
+
+}
+
+div.edit {
+  background-color: #8EC8D1;
+  margin-left: 0px;
+  padding-left: 15%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+}
+
+
+#editform li {
+  padding-top: 10px;
+}
+
+#editform input {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-top: 8px;
+  width: 40%;
+}
+
+#editform input[name='title'] {
+  margin-left: 150px;
+  margin-top: 10px;
+  width: 40%;
+}
+#editform input[name='date'] {
+  margin-left: 41px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+#editform input[name='time'] {
+  margin-left: 56px;
+  margin-top: 10px;
+  width: 40%;
+}
+
+#editform input[name='location'] {
+  margin-left: 161px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 40%;
+}
+
+
+#editform textarea {
+  font-size: 0.9em;
+  padding: 5px;
+  position: relative;
+  display: block;
+  width: 75%;
+  padding-bottom: 30px;
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+#editform button {
+    margin-top: 20px;
+    margin-right: 30px;
+    background-color: #66B9BF;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    cursor: pointer;
+
+}
+
+#editform button:hover {
+  cursor: pointer;
+  background-color: #afafaf;
+}
+
+
+/* Gallery page */
+div.gallery_header {
+  background-color: #8EC8D1;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 1%;
+}
+
+div.gallery {
+  margin: 0 auto;
+  background-color: #8EC8D1;
+  margin-bottom: 0px;
+  padding: 1%;
+
+}
+
+div.container {
+  text-align:center;
+  display: inline-block;
+  height: auto;
+  min-height: 700px;
+}
+
+div.photo {
+  position: relative;
+  margin: 5px;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+div.photo img.notadmin {
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  filter: grayscale(50%);
+  transition: 0.1s;
+  margin: auto;
+}
+
+div.photo img.notadmin:hover {
+  filter: grayscale(0%);
+  transform: scale(1.005);
+}
+
+div.photo img.admin {
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  transition: 0.25s;
+  opacity: 1;
+  backface-visibility: hidden;
+}
+
+div.photo .gallery_edit {
+  transition: 0.25s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+div.photo:hover img.admin {
+  opacity: 0.3;
+  cursor: default;
+}
+
+div.photo:hover .gallery_edit {
+  opacity: 0.9;
+}
+
+.delete {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-style: none;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+div.upload_image {
+  height: 10%;
+  text-align: center;
+  background-color: #66B9BF;
+  color: white;
+}
+
+div.upload_image form {
+  text-align: center;
+}
+
+div.upload_image label {
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  color: #f2f2f2;
+}
+
+div.upload_image input {
+  display: block;
+  margin: 7px auto;
+  width: 160px;
+}
+
+div.upload_image button {
+  background-color: #585858;
+  padding: 5px;
+  border-style: none;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  letter-spacing: 0.25px;
+  cursor: pointer;
+}
+
+div.upload_image button:hover {
+  background-color: #383838;
+  padding: 5px;
+  border-style: none;
+  font-size: 13px;
+  color: white;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  letter-spacing: 0.25px;
+}
+
+div.container p {
+  margin-top: 40px;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+img.camera {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+div.full {
+  width: 100%;
+}
+
+div#noimage {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+div#noimage a {
+  display: block;
+  text-align: center;
+  color: #383838;
+  text-decoration: none;
+  margin: 0;
+}
+
+/* Contact page */
+
+div.contact_header {
+  background-color: #8EC8D1;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+}
+
+div.contact_body {
+  background-color: #d7d7d7;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  margin-bottom: 300px;
+}
+
+.contact_body form {
+  margin: 40px;
+  font-size: 1.25em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:left;
+}
+
+.contact_body input {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.contact_body textarea {
+  font-size: 0.9em;
+  padding: 5px;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
+.contact_body button {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  display: block;
+  width: 390px;
+}
+
+.contact_body button:hover {
+  background-color: #07889B;
+  color: white;
+  cursor:pointer;
+}
+
+/* Login page */
+
+
+div.login_header {
+  background-color: #66B9BF;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+}
+
+div.login_body {
+  background-color: #d7d7d7;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  margin-bottom: 20%;
+}
+
+.login_body form {
+  margin: 20px;
+  padding-left: 10%;
+  font-size: 1.25em;
+  text-align:left;
+}
+
+.login_body input {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-left: 30px;
+  min-width: 50%;
+  max-width: 30%;
+}
+
+.login_body input[name=password] {
+  font-size: 0.9em;
+  padding: 5px;
+  margin-left: 34px;
+  min-width: 50%;
+  max-width: 30%;
+}
+
+.login_body li {
+  margin-top: 5px;
+}
+
+.login_body button {
+  margin-top: 20px;
+  margin-right: 30px;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+/* Members page */
+div.members_header {
+  background-color: #66B9BF;
+  text-align: center;
+  color: white;
+  letter-spacing: 5px;
+  margin-bottom: 1%;
+}
+div.members_form {
+  background-color: #d7d7d7;
+  height: 205px;
+  box-sizing: border-box;
+  padding-top: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+div.members_form h1 {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
+div.members_form ul {
+  padding-top: 15px;
+  text-align: left;
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.members_form li {
+  padding-bottom: 5px;
+}
+div.members_form button {
+  margin-top: 10px;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+div.members_form button:hover {
+  background-color: #07889B;
+}
+div.members_form .first_name_input {
+  margin-left: 18px;
+}
+div.members_form .last_name_input {
+  margin-left: 19px;
+}
+div.members_form .netid_input {
+  margin-left: 60px;
+}
+div.members_search {
+  padding: 20px;
+  background-color: #d7d7d7;
+}
+div.members_search h1 {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  font-size: 25px;
+}
+div.members_search input {
+  height: 20px;
+  width: 300px;
+}
+div.members_search select {
+  height: 25px;
+}
+div.members_search button {
+  margin-left: 20px;
+  background-color: #66B9BF;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+}
+div.members_search button:hover {
+  background-color: #07889B;
+}
+div.members_table table{
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+div.members_table tr:not(:first-child):hover {
+  background-color: #f5f5f5;
+}
+div.members_table th {
+  height: 40px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+}
+div.members_table td {
+  width: 0px;
+  text-align: left;
+}
+div.members_table h1, h2 {
+  text-align: center;
+}
+div.members_table button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+div.members_table button img {
+  height: 25px;
+  width: 25px;
+}
+div.members_spacer {
+  margin-bottom: 20px;
+}
